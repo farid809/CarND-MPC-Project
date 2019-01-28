@@ -54,7 +54,6 @@ int main() {
            * Both are in between [-1, 1].
            */
 
-          
           // to estimate next state parameters after latency
           //  double latency = 0.1;
           //   double Lf = 2.67;
@@ -63,7 +62,6 @@ int main() {
           //    psi = psi - ((v * delta * latency)/Lf);
           //    v = v + (acceleration * latency);
           
-
 
           //std::cout << "***********" << ptsx[0] << std::endl;
           //std::cout << "**********" << ptsx.size() << std::endl;
@@ -97,11 +95,6 @@ int main() {
           // // Due to the sign starting at 0, the orientation error is -f'(x).
           // //double epsi = psi - atan(coeffs[1]);
            double epsi = - atan(coeffs[1]);
-
-          
-
-           
-
          
           Eigen::VectorXd state(6);
 
@@ -138,10 +131,6 @@ int main() {
               mpc_y_vals.push_back(mpc_solution[i+1]);
             i=i+2;
           }
-
-     
-
-
 
           msgJson["mpc_x"] = mpc_x_vals;
           msgJson["mpc_y"] = mpc_y_vals;
