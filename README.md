@@ -1,6 +1,6 @@
 # CarND-Controls-MPC
 
-In this project We are implementing Model Predictive Control to drive the car around the track framing the control problem as an optimizationo problem over time horizons. Cross track error are not given and we will need to caculate it our self. there's a 100 millisecond latency between actuations commands on top of the connection latency.
+In this project, I implemented a Model Predictive Control (MPC) to drive the car around the track framing the control problem as an optimizationo problem over time horizons. Cross track error are not given and we will need to caculate it our self. there's a 100 millisecond latency between actuations commands on top of the connection latency.
 
 
 ## Results 
